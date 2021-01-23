@@ -1,0 +1,13 @@
+type Book {
+	bid: Int
+	userid: Int
+	bookname: String
+	bookprice: String
+}
+
+type User {
+	id: Int
+	username: String
+	password: String
+	book: Book
+}

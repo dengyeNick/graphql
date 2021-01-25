@@ -5,13 +5,13 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.example.demo.model.Person;
 import com.example.demo.model.User;
 
 
 @Mapper
-public interface UserMapper {
+public interface PersonMapper {
 
-	List<User> findAllUserAndBook();
+	List<Person> findPerson();
 
-	User findBookById(Long id);
 }

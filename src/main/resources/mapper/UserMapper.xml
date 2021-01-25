@@ -15,4 +15,8 @@
 	<select id="findAllUserAndBook"  resultMap="usermap">
 		SELECT * FROM USER LEFT JOIN book ON user.id = book.userid
 	</select>
+	
+	<select id="findBookById"  resultMap="usermap">
+		SELECT * FROM USER LEFT JOIN book ON user.id = book.userid where user.id=#{id}
+	</select>
 </mapper>

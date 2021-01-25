@@ -9,5 +9,20 @@ type User {
 	id: Int
 	username: String
 	password: String
-	book: Book
+	book: [Book]
+}
+
+type Person {
+	id: Int
+	name: String
+	age: Int
+	parentId: Int
+	childrens: [Person]
+}
+
+
+input PersonInput {
+	name: String
+	age: Int
+	parentId: Int
 }

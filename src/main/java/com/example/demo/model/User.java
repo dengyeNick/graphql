@@ -1,10 +1,12 @@
 package com.example.demo.model;
 
+import java.util.List;
+
 public class User {
 	private int id;
 	private String username;
 	private String password;
-	private Book book;
+	private List<Book> book;
 	public int getId() {
 		return id;
 	}
@@ -23,11 +25,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Book getBook() {
+	public List<Book> getBook() {
 		return book;
 	}
-	public void setBook(Book book) {
+	public void setBook(List<Book> book) {
 		this.book = book;
 	}
+
 	
 }
